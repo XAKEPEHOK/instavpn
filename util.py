@@ -114,7 +114,7 @@ def setup_vpn():
 
     return True
 
-CRONTAB = 'crontab -l | { cat; echo "* * * * * vnstati -s -i eth0 -o /opt/instavpn/public/images/vnstat.png"; } | crontab -'
+CRONTAB = 'crontab -l | { cat; echo "* * * * * vnstati -s -i eth1 -o /opt/instavpn/public/images/vnstat.png"; } | crontab -'
 
 def webui():
     logger.debug('Generate random password')
